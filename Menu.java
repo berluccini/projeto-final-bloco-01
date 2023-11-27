@@ -8,12 +8,13 @@ public class Menu {
 		
 		Scanner leia = new Scanner(System.in);
 		 
-		int opcao = 0; 
+		int opcao =0 ,tipo,quantidade;
+		String nome, produto;
 		
 		while (true) {
 		
 		System.out.println("                                                     ");
-		System.out.println("                BANCO DO BRAZIL COM Z                ");
+		System.out.println("                Adega Berluccini                     ");
 		System.out.println("                                                     ");
 		System.out.println("*****************************************************");
 		System.out.println("                                                     ");
@@ -29,7 +30,7 @@ public class Menu {
 		
 		if (opcao == 0) 
 			
-			System.out.println("\nBanco do Brazil com Z - O seu Futuro começa aqui!");
+			System.out.println("\n adega berluccini - venha matar sua cede!");
 			
 			
 		switch (opcao) {
@@ -37,14 +38,16 @@ public class Menu {
 		
 		case 1:
 			System.out.println( "Adicionar Produto:\n\n");
-		
+			System.out.println("digite o nome do produro:");
+			nome=leia.next();
 			
 		case 2:
 			System.out.println( "Listar todos os produtos:\n\n");
 				
 		case 3:
 			System.out.println( "Consultar por produto:\n\n");
-				
+			System.out.println("escolha o ptoduto:");
+			produto=leia.next();
 		case 4:
 			System.out.println( "Atualizar dados dos produtos\n\n");
 
